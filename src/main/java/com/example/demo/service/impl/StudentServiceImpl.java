@@ -12,8 +12,8 @@ public class StudentServiceImpl implements StudentService{
     @Autowired StudentRepo strepo;
     @Override
     public Student insertStudent(Student st){
-        strepo.save(st);
-        return st;
+       return strepo.save(st);
+        
     }
     @Override
     public List<Student>getAllStudents(){
