@@ -16,5 +16,16 @@ public class StudentServiceImpl implements StudentService{
         return st;
     }
     @Override
-    
+    public List<Student>getAllStudents(){
+        return strepo.findAll();
+    }
+    @Override
+    public Optional<Student>getOneStudent(Long id){
+        return strepo.findById(st);
+
+    }
+    @Override
+    publis Student deleteStudent(Long id){
+        return 
+    }
 }
